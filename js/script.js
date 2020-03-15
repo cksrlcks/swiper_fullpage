@@ -57,7 +57,9 @@ var sec1_slide = new Swiper('.sec1-slide', {
         disableOnInteraction: false
     },
     loop: true,
-    watchSlidesProgress: true
+    watchSlidesProgress: true,
+    speed: 600,
+    effect: 'fade',
 
 })
 

@@ -20,8 +20,8 @@ body.black-ui header .icon-menu:before{color:#333;}
 body.black-ui header .logo svg path{fill:#333;}
 
 .swiper-container{width:100%; height:100%; margin-left: auto; margin-right: auto;}
-.swiper-slide{width:100%;  display:flex; align-items: center; justify-content: center;}
-.swiper-slide.item_02{background:#fc0;}
+.swiper-slide{width:100%;  display:flex; align-items: center; justify-content: center; overflow:hidden;}
+.swiper-slide.item_02{background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%); color:#444;}
 .swiper-slide.item_04{background:#eee;}
 .footer{height:300px; background:#000;}
 
@@ -40,6 +40,10 @@ body.black-ui .swiper-pagination-bullet{background:rgba(0,0,0,0.2); color:#333;}
 .sec1-slide .pagination span{width: 120px; height: 4px; border-radius: 0; position: relative; overflow: hidden; margin:0 16px; background:rgba(255,255,255,0.5);}
 .sec1-slide .pagination span:before{content:""; display: block; position: absolute; top:0; right:0; bottom:0; left:0;}
 .sec1-slide .pagination .swiper-pagination-bullet-active:before{background:#fff; animation:slide-progress 4s ease forwards;}
+.sec1-slide .sec1-slide-item{}
+.sec1-slide .item_01{background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);}
+.sec1-slide .item_02{background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);}
+.sec1-slide .item_03{background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);}
 @keyframes slide-progress {
 	0% {
 		transform: translateX(-100%);
@@ -52,8 +56,8 @@ body.black-ui .swiper-pagination-bullet{background:rgba(0,0,0,0.2); color:#333;}
 /*contents css*/
 
 .item_02 .container{padding:4em;}
-.item_02 .container h3{font-size:2.5em; margin-bottom:1em;}
-.item_02 .container p{font-size:1.5em; width:60%; line-height:1.5em;}
+.item_02 .container h3{font-size:2.5em; margin-bottom:1em; position:relative; z-index: 2;}
+.item_02 .container p{font-size:1.5em; width:60%; line-height:1.5em; position:relative; z-index: 2;}
 
 .item_03 .sec3-slide{width:100%;}
 .item_03 .sec3-slide .card{background:#333; width:400px; display:block;}
@@ -65,3 +69,10 @@ body.black-ui .swiper-pagination-bullet{background:rgba(0,0,0,0.2); color:#333;}
 .item_03 .sec3-slide .card .describe{color:#fff; opacity:0.25; line-height:1.5em;}
 .item_03 .arrow{display: flex; align-items: center; justify-content: center; margin:3em 0 0;}
 .item_03 .arrow .pagination{width:auto; margin:0 2em;}
+
+/*slide 2 animation*/
+
+.animation_bg{}
+.animation_bg .circle_01{position:absolute; top:60%; right:10%; width:600px; height:600px; border-radius: 50%; box-sizing: border-box; border:30px solid rgba(255,255,255,0.2);}
+.animation_bg .circle_02{position:absolute; top:10%; left:5%; width:400px; height:400px; border-radius: 50%; box-sizing: border-box; border:30px solid rgba(255,255,255,0.2);}
+.animation_bg .circle_03{position:absolute; top:-20%; right:-5%; width:600px; height:600px; border-radius: 50%; box-sizing: border-box; border:20px solid rgba(255,255,255,0.2);}
