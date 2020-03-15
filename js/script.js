@@ -1,7 +1,8 @@
 /*get section data-name*/
 var menu = [];
 var menuElment = document.querySelectorAll('.swiper-container.main-slider .swiper-slide.item');
-menuElment.forEach(function (el) {
+
+Array.prototype.forEach.call(menuElment, function (el) {
     var menuName = el.getAttribute('data-name');
     menu.push(menuName);
 })
