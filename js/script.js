@@ -54,7 +54,7 @@ var sec1_slide = new Swiper('.sec1-slide', {
     },
     autoplay: {
         delay: 4000,
-        disableOnInteraction: false
+        disableOnInteraction: true
     },
     loop: true,
     watchSlidesProgress: true,
